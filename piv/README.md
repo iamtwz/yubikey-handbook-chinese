@@ -1,3 +1,3 @@
-## Personal Identity Verification (PIV)
+## 个人身份验证 (PIV)
 
-Yubikey supports the Personal Identity Verification (PIV or FIPS 201) card interface (NIST SP 800-73), enabling RSA or ECC sign/encrypt/decrypt operations using a private key stored on the SmartCard through common interfaces such as PKCS#11.
+Yubikey 支持个人身份验证 (PIV 和 FIPS 201) 智能卡接口 (NIST SP 800-73)，使用 PKCS#11 一类的通用接口可以使用在智能卡上存储的私钥来进行 RSA 或者 ESS 签名、加密、解密操作。
