@@ -16,7 +16,7 @@ _图源: Yubico_
 
 ## 作者
 
-Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.com/ruipmarinho), [npm](https://www.npmjs.com/~ruimarinho)) 在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键人物和维护高可用系统。[阅读更多](introduction/about-the-author.md)
+Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.com/ruipmarinho), [npm](https://www.npmjs.com/~ruimarinho)) 在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键任务和维护高可用系统。[阅读更多](introduction/about-the-author.md)
 
 ## 译者
 
