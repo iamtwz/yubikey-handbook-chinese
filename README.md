@@ -24,15 +24,19 @@ Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
 
-许多专有名词不知道怎么翻译比较好，因为不会 Docker 可能需要另外一个人帮忙翻译。
+许多专有名词不知道怎么翻译比较好，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译。
+
+## 协议
+
+在翻译本书时作者还未选择开源协议，经邮件沟通后，暂定为 CC BY-NC-SA 知识共享协议。
 
  # 翻译进度
 
 - [介绍](README.md) （100%，Wenzel Tian）
   - [关于作者](introduction/about-the-author.md)（100%，Wenzel Tian）
 - [个人身份验证 (PIV)](piv/README.md)（100%，Wenzel Tian）
-  - [在 Yubikey 上使用 PIV](piv/use-cases.md)
-  - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)
+  - [在 Yubikey 上使用 PIV](piv/use-cases.md)（100%，Wenzel Tian）
+  - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)（100%，Wenzel Tian）
 - [设备初始化](device-initialization/README.md)
 - [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)
   - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)

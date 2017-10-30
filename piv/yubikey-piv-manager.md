@@ -1,11 +1,11 @@
-### Yubikey PIV Manager
+### Yubikey PIV 管理器
 
-The [Yubikey PIV Manager](https://developers.yubico.com/yubikey-piv-manager) is a GUI tool to manage PIV-related data on a Yubikey. The command-line version can be installed via Homebrew:
+[Yubikey PIV 管理器](https://developers.yubico.com/yubikey-piv-manager) 是一个拥有图形界面的可以管理 PIV 相关内容的管理器。它的命令行版本可以使用 Homebrew 安装（译者注：macOS 平台）：
 
 ```
 ❯ brew install yubico-piv-tool
 ```
 
-The command-line utility is more powerful (e.g. allows overriding pin and touch default slot policies) but it also more prone to user errors. It's very easy to overwrite an existing key, for instance.
+这个命令行版本的工具功能更强大（比如 可以覆盖 PIN 和修改默认插槽的触摸策略），但它也更容易导致用户操作错误。比如它可以很方便的覆盖现有密钥。
 
-After [downloading](https://developers.yubico.com/yubikey-piv-manager) and installing Yubikey PIV Manager and `yubico-piv-tool`, insert your Yubikey. You will be prompted [initialize your device](../device-initialization/README.md).
+完成 [下载](https://developers.yubico.com/yubikey-piv-manager) 和安装 Yubikey PIV 管理器和 `yubico-piv-tool`后，插入你的 Yubikey，你应该会被提示应该 [初始化你的设备](../device-initialization/README.md)。

@@ -1,25 +1,25 @@
-### Use cases for a PIV-enabled Yubikey
+### 在 Yubikey 上使用 PIV
 
-Yubikey 4 comes with 5 programmable slots capable of holding X.509 certificates, together with it's accompanying private key. The other 20 remaining slots are used for _Retired Key Management_, which allows decryption of earlier encrypted documents or emails using retired keys.
+Yubikey 4 拥有 5 个可以保存 X.509 证书和私钥的可编程插槽。 其他的 20 个插槽被用作_退休密钥管理_，用于解密早起使用退休密钥加密的文件或者邮件。
 
-Each slot has a predestined use case, including a default PIN and touch policy. However, these are merely indicative and may be overwritten.
+每个插槽都可以设置一个预定用法，包括默认的 PIN 和触摸策略。他们都是示例性的并且都可以被覆盖。
 
-**Slot 9a: PIV Authentication**
+**9a 插槽：PIV 验证**
 
-Authenticates the smart card and the cardholder (e.g. OS logins, ssh, WiFi, OpenVPN, curl, Android code, Mac code, automatic screen locking). By default, PIN is required once and may be re-used for subsequent operations.
+验证智能卡和持卡人（比如用于 系统登录、ssh、WiFi、OpenVPN、curl、Android code、Mac code、自动屏幕解锁）。通常 PIN 只会请求一次，在后续操作中可能会被重复使用。
 
-**Slot 9c: Digital Signature**
+**9c 插槽：电子签名**
 
-Signs objects (Android codesign, Mac codesign, storing intermediate CA private key). By default, PIN is required for each signing operation.
+签名对象（Android code 签名、Mac code 签名、中间 CA 私钥签名）。一般来说，每次操作都需要验证 PIN。
 
-**Slot 9d: Key Management**
+**9d 插槽：钥匙管理**
 
-Encrypts object for the purpose of confidentiality. By default, PIN is required once and may be re-used for subsequent operations.
+以保密为目的加密对象时，通常 PIN 只需要请求一次，在后续操作中可以重复使用。
 
-**Slot 9e: Card Authentication**
+**9e 插槽：安全卡验证**
 
-Authenticates against physical access applications (e.g. door locks). By default, PIN is not required.
+当需要物理接触验证时（比如门锁），通常情况不需要验证 PIN。
 
-**Slot f9: Attestation**
+**f9 插槽: 认证**
 
-Attests other slot keys were generated on the device.
+给在设备上其他插槽的钥匙提供认证。

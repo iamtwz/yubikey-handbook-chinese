@@ -1,8 +1,8 @@
-## Device initialization
+## 设备初始化
 
 ![](../images/yubikey-4-trio.png)
 
-_Source: Yubico_
+_图源：Yubico_
 
 Device initialization is straightforward but requires some organization around secret management. In the future, this can be improved by defining a group policy distributed via MDM which can enforce some of the settings mentioned below.
 
