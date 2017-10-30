@@ -28,7 +28,7 @@ Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.
 
 ## 协议
 
-在翻译本书时作者还未选择开源协议，经邮件沟通后，暂定为 CC BY-NC-SA 知识共享协议。
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />这个作品使用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> 协议共享。
 
  # 翻译进度
 
