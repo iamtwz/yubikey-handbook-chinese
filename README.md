@@ -14,9 +14,13 @@ _图源: Yubico_
 
 # 关于
 
+## 英文原版
+
+https://github.com/ruimarinho/yubikey-handbook
+
 ## 作者
 
-Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.com/ruipmarinho), [npm](https://www.npmjs.com/~ruimarinho)) 在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键任务和维护高可用系统。[阅读更多](introduction/about-the-author.md)
+Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键任务和维护高可用系统。[阅读更多](introduction/about-the-author.md)
 
 ## 译者
 
@@ -24,7 +28,7 @@ Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
 
-许多专有名词不知道怎么翻译比较好，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译。
+许多专有名词不知道怎么翻译比较好，翻译完成的内容也欠缺润色，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译。
 
 ## 协议
 
@@ -37,7 +41,7 @@ Rui Marinho ([github](https://github.com/ruimarinho), [twitter](https://twitter.
 - [个人身份验证 (PIV)](piv/README.md)（100%，Wenzel Tian）
   - [在 Yubikey 上使用 PIV](piv/use-cases.md)（100%，Wenzel Tian）
   - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)（100%，Wenzel Tian）
-- [设备初始化](device-initialization/README.md)
+- [设备初始化](device-initialization/README.md)（100%，Wenzel Tian）
 - [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)
   - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)
 - [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)
