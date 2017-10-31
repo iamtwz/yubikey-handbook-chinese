@@ -42,8 +42,8 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [在 Yubikey 上使用 PIV](piv/use-cases.md)（100%，Wenzel Tian）
   - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)（100%，Wenzel Tian）
 - [设备初始化](device-initialization/README.md)（100%，Wenzel Tian）
-- [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)
-  - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)
+- [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)（100%，Wenzel Tian）
+  - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)（100%，Wenzel Tian）
 - [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)
   - [生成密钥吊销列表 (KRL)](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)
