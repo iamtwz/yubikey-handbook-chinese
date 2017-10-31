@@ -1,72 +1,72 @@
-## Authenticating SSH with PIV and PKCS#11 (client)
+## 使用 PIV 和 PKCS#11 验证 SSH（客户端）
 
-One of the coolest features of the Yubikey is authenticating SSH sessions via PKCS#11. The private key is stored on the Yubikey and whenever it is accessed, Yubikey can require a touch action.
+Yubikey 很酷的用法之一就是通过 PKCS#11 来验证 SSH。 把私钥存储在 Yubikey 上，当它被访问时，就可以让你请求触摸操作。
 
-Besides the common remote login, all connections that use SSH, such as remote git server (e.g. GitHub), may trigger this behavior if desired. This is a protection on the client side to prevent unauthorized SSH private key access.
+除了常见的远程登录，所有通过 SSH 连接的操作（比如使用远程 git 服务器（比如 Github））都可能出发这一行为。这是客户端的保护，用来防止在未授权的情况下访问到 SSH 私钥。
 
-Note that only RSA keys are supported when using this method.
+需要注意的是，只有 RSA 密钥支持这种操作。
 
-1. Create a 2048-bit RSA key pair:
+1. 创建一对 2048-bit  的 RSA 钥匙串：
 
   ```sh
   ❯ yubico-piv-tool -s 9a -a generate -k --pin-policy=once --touch-policy=always --algorithm=RSA2048 -o public.pem
   ```
 
-  Enter Yubikey's _Management key_.
+  输入你的 Yubikey 的 _管理密钥_。
 
-2. Create a self-signed certificate (or, alternatively, a certificate signing request):
+2. 创建一个自签名证书（或者使用证书签名请求替代）:
 
   ```sh
   ❯ yubico-piv-tool -a verify-pin -a selfsign-certificate -s 9a -S '/CN=ssh/' --valid-days=365 -i public.pem -o cert.pem
   ```
 
-  Enter PIN then touch the Yubikey.
+  输入 PIN 码然后触摸一下你的 Yubikey。
 
-  Alternatively replace `selfsign-certificate` by `request-certificate` and send the resulting `.csr` file for internal CA certification.
+  或者用 `selfsign-certificate` 替代 `request-certificate` ，并把得到的 `.csr` 文件进行内部 CA 认证。
 
-3. Import the (self-)signed certificate:
+3. 导入已（自）签名的证书：
 
   ```sh
   ❯ yubico-piv-tool -k -a import-certificate -s 9a -i cert.pem
   ```
 
-  Enter Yubikey's _Management key_.
+  输入你的 Yubikey 的 _管理密钥_。
 
-4. Export the public key stored in the Yubikey in the correct format for OpenSSH:
+4. 以正确的格式导出 OpenSSH 使用的存储在 Yubikey 上的公钥：
 
   ```sh
   ❯ ssh-keygen -D /usr/local/opt/opensc/lib/pkcs11/opensc-pkcs11.so -e
   ```
 
-  Alternatively, you can use the generated public key before you delete it:
+  或者，如果你没有删掉的话你也可以使用先前生成的公钥。
 
   ```sh
   ❯ ssh-keygen -i -m PKCS8 -f public.pem
   ```
 
-  You can now share this public key for SSH authentication (e.g `~/.ssh/authorized_keys`).
+  你现在可以分享这个公钥用作 SSH 验证了（比如放在 `~/.ssh/authorized_keys`）。
 
-5. Check slot 9a status (optional):
+5. 检查 9a 插槽的状态（可选）：
 
   ```sh
   ❯ yubico-piv-tool -a status
   ```
 
-6. Add the SSH key provided via PKCS#11 to the local ssh-agent:
+6. 将使用 PKCS#11 的私钥添加到本地 ssh-agent：
 
   ```sh
   ❯ ssh-add -s /usr/local/opt/opensc/lib/pkcs11/opensc-pkcs11.so
   ```
 
-  Enter the Yubikey PIN when it asks for the passphrase.
+  当它询问密码时输入你的 Yubikey 的 PIN 码。
 
-7. Confirm the key has been added:
+7. 确定私钥已经被添加：
 
   ```sh
   ❯ ssh-add -L
   ```
 
-8. Alternatively, selectively add the PKCS11Provider to `~/.ssh/config`:
+8. 也可以选择性的把 PKCS11Provider 添加到 `~/.ssh/config` 中：
 
   ```sh
   Host github.com
