@@ -49,7 +49,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 - [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)（100%）
   - [生成密钥吊销列表 (KRL) ](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)（100%）
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
-  - [附加内容（100%，Wenzel Tian）](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)
+  - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)（100%）
 - [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)
     - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)
