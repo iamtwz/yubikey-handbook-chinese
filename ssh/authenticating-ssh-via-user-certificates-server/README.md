@@ -1,12 +1,12 @@
-## Authenticating SSH via User Certificates (server)
+## 使用用户证书验证 SSH （服务端）
 
-A complicated aspect of security is reliability and guaranteeing the consistency of all security controls. Instead of relying on a central authentication authority such as LDAP or Kerberos, we can take advantage of SSH or, more specifically OpenSSH, to provide both.
+在保证安全性的前提下保障可靠性、可控性和一致性是非常复杂的。我们可以利用 SSH 又或者说 OpenSSH 来替代所依赖的中央身份验证（比如 LDAP 或者 Kerberos）
 
-In addition to [authenticating SSH client access with PIV and PKCS#11](#authenticating-ssh-client-access-with-piv-and-pkcs-11), it is possible to increment the security of the remote SSH authentication. Facebook and Yahoo have switched to SSH User Certificates to avoid lockdown if the central authentication system goes down. It also helps maintaining the `authorized_keys` file, as it does not scale well (it requires a 1:1 match).
+除了 [通过 PIV 和 PKCS#11 验证 SSH](#authenticating-ssh-client-access-with-piv-and-pkcs-11) 之外，还可以增加远程 SSH 验证的安全性。Facebook 和 Yahoo 已经更换到使用 SSH 用户证书来避免中心认证系统宕机。因为他不支持拓展（需要 1:1  匹配），所以也有助于保持 `authorized_keys` 文件。
 
-A _SSH User Certificate Authority_ can sign and thus securely authenticate each client connecting to a server.
+一个 _SSH 用户证书颁发机构_ 可以对连接到服务器上的每个客户端进行签名和安全认证。
 
-The signed certificate also designates the principals (login identities) that can be used with that certificate. For each user, the principals can be described on a file:
+签名的证书还可以指定这个证书的用户（登录身份）。每个用户可以记录在一个文件中：
 
 ```sh
 ❯ mkdir /etc/ssh/auth_principals
@@ -14,32 +14,32 @@ The signed certificate also designates the principals (login identities) that ca
 ❯ echo -e 'access-databases' > /etc/ssh/auth_principals/foobar
 ```
 
-In this example, any signed certificate with the `access-root` principal would be allowed to SSH into that host with the `root` username, and any signed certificate with the `access-databases` principal would be able to login with the `foobar` user.
+上例中，任何一个签名主体带有 `access-root` 的证书可以使用 `root` 用户名通过 SSH 连接进主机， 任何一个签名主体带有 `access-databases` 的证书可以使用 `foobar` 用户名登录。
 
-Now let's create the _SSH User Certificate Authority_.
+现在让我们来创建 _SSH 用户证书颁发机构_。
 
-1. Using an air gapped computer, generate the user certificate authority:
+1. 使用一台气隙系统【译者注：即与互联网物理隔离】的计算机，生成用户证书颁发机构的根证书：
 
   ```sh
   ❯ ssh-keygen -C "SSH User Certificate Authority" -f sshuser.root.ca
   ```
 
-2. Distribute the public key (`sshuser.root.ca.pub`) to `/etc/ssh/` on every host. Make sure the file is `chmod 644`.
+2. 把根证书（`sshuser.root.ca.pub`）放到每个主机的 `/etc/ssh/` 目录下，保证文件权限是 `chmod 644`。
 
-3. Update `/etc/ssh/sshd_config` to include the new CA and principals file:
+3. 更新 `/etc/ssh/sshd_config` 文件加入新的 CA 和 principals 文件：
 
   ```sh
   TrustedUserCAKeys /etc/ssh/sshuser.root.ca.pub
   AuthorizedPrincipalsFile /etc/ssh/auth_principals/%u
   ```
 
-4. Have the user/client extract the public key from their Yubikey so it can be signed by the new CA on the air gapped computer:
+4. 让用户从 Yubikey 中提取他们的公钥以便使用在气隙系统的计算机中的新 CA 签名：
 
   ```sh
   ssh-keygen -D /usr/local/opt/opensc/lib/pkcs11/opensc-pkcs11.so -e
   ```
 
-5. Sign the user certificate on the air gapped computer, with particular attention to the login name (`<user>`), the principals which this certificate will be able to claim (`<principals>`, separated by commas), the certificate expiration time (`+52w`) and the serial number (`<serial>`, an integer which should be tracked):
+5. 在气隙系统的计算机上签名用户的证书， 要特别注意一下登录名（`<user>`），这个证书应该能确定被声明的主体（`<principals>`，使用逗号分隔），证书到期时间（`+52w`）和序列号（`<serial>`）。
 
   ```sh
   ❯ ssh-keygen -s sshuser.root.ca -I <user> -n <principals> -V +52w -z <serial> <user>.pub
@@ -47,7 +47,7 @@ Now let's create the _SSH User Certificate Authority_.
   Signed user key foobar-cert.pub: id "foobar" serial 1928121 for access-root valid from 2016-12-10T00:10:00 to 2017-12-09T00:10:10
   ```
 
-6. Confirm the user certificate looks good:
+6. 确定用户的证书看起来没问题：
 
   ```sh
   ❯ ssh-keygen -Lf <user>-cert.pub
@@ -70,4 +70,4 @@ Now let's create the _SSH User Certificate Authority_.
               permit-user-rc
   ```
 
-7. Copy `<user>-cert.pub` to the client's `~/.ssh` directory and name it `id_rsa-cert.pub`. The name is quite specific, as there seems to be a limitation on `opensc-pkcs11` to detect a certificate other than `id_rsa-cert.pub`.
+7. 复制 `<user>-cert.pub` 到客户端的 `~/.ssh` 目录下并重命名为 `id_rsa-cert.pub`。 这个名字十分具体， 因为 `opensc-pkcs11` 似乎有一个限制去检测除了 `id_rsa-cert.pub` 之外的证书。
