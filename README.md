@@ -30,6 +30,8 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
 许多专有名词不知道怎么翻译比较好，翻译完成的内容也欠缺润色，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译。
 
+在本书中，译者注的内容均写在「【】」中。
+
 ## 协议
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />这个作品使用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> 协议共享。
@@ -44,10 +46,10 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 - [设备初始化](device-initialization/README.md)（100%，Wenzel Tian）
 - [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)（100%，Wenzel Tian）
   - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)（100%，Wenzel Tian）
-- [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)
-  - [生成密钥吊销列表 (KRL)](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)
-- [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)
-  - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)
+- [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)（100%，Wenzel Tian）
+  - [生成密钥吊销列表 (KRL)（100%，Wenzel Tian）](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)
+- [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%，Wenzel Tian）
+  - [附加内容（100%，Wenzel Tian）](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)
 - [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)
     - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)
