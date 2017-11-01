@@ -24,7 +24,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
 ## 译者
 
-目前这本书由 Wenzel Tian 使用他的二把刀初中英语在进行翻译，如果有问题，请提交 Issues。
+目前这本书由 Wenzel Tian 使用他的二把刀初中英语在进行翻译，未特别注明的应该都是我翻译的了，如果有问题，请提交 Issues。
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
 
@@ -38,17 +38,17 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
  # 翻译进度
 
-- [介绍](README.md) （100%，Wenzel Tian）
-  - [关于作者](introduction/about-the-author.md)（100%，Wenzel Tian）
-- [个人身份验证 (PIV)](piv/README.md)（100%，Wenzel Tian）
-  - [在 Yubikey 上使用 PIV](piv/use-cases.md)（100%，Wenzel Tian）
-  - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)（100%，Wenzel Tian）
-- [设备初始化](device-initialization/README.md)（100%，Wenzel Tian）
-- [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)（100%，Wenzel Tian）
-  - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)（100%，Wenzel Tian）
-- [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)（100%，Wenzel Tian）
-  - [生成密钥吊销列表 (KRL)（100%，Wenzel Tian）](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)
-- [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%，Wenzel Tian）
+- [介绍](README.md) （100%）
+  - [关于作者](introduction/about-the-author.md)（100%）
+- [个人身份验证 (PIV)](piv/README.md)（100%）
+  - [在 Yubikey 上使用 PIV](piv/use-cases.md)（100%）
+  - [Yubikey PIV 管理器](piv/yubikey-piv-manager.md)（100%）
+- [设备初始化](device-initialization/README.md)（100%）
+- [使用  PIV 和 PKCS#11 验证 SSH（客户端）](ssh/authenticating-ssh-with-piv-and-pkcs11-client/README.md)（100%）
+  - [故障排除](ssh/authenticating-ssh-with-piv-and-pkcs11-client/troubleshooting.md)（100%）
+- [使用用户证书验证 SSH （服务端）](ssh/authenticating-ssh-via-user-certificates-server/README.md)（100%）
+  - [生成密钥吊销列表 (KRL) ](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)（100%）
+- [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
   - [附加内容（100%，Wenzel Tian）](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)
 - [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)
