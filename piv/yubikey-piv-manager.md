@@ -1,6 +1,6 @@
 ### Yubikey PIV 管理器
 
-[Yubikey PIV 管理器](https://developers.yubico.com/yubikey-piv-manager) 是一个拥有图形界面的可以管理 PIV 相关内容的管理器。它的命令行版本可以使用 Homebrew 安装（译者注：macOS 平台）：
+[Yubikey PIV 管理器](https://developers.yubico.com/yubikey-piv-manager) 是一个拥有图形界面的可以管理 PIV 相关内容的管理器。它的命令行版本可以使用 Homebrew 安装【译者注：macOS 平台】：
 
 ```
 ❯ brew install yubico-piv-tool
