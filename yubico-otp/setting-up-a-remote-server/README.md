@@ -1,3 +1,3 @@
-### Setting up a remote server
+### 设置远程服务器
 
-In the following example Docker is used to create an Ubuntu-based server where Yubico software will be installed. It uses the latest Ubuntu distribution version available on Docker Hub.
+这个示例会使用 Docker 来创建安装 Yubico 软件使用的基于 Docker Hub 上最新版本 Ubuntu 操作系统的服务器。
