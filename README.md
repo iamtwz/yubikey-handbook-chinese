@@ -103,8 +103,8 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)
   - [故障排除](openpgp/troubleshooting/README.md)
     - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)
-- [集成至 macOS](macos/README.md)
-  - [使用 HMAC-SHA1 进行线下挑战答应](macos/offline-authentication/README.md)
-    - [配置 HMAC-SHA1 挑战答应](macos/offline-authentication/configuration.md)
-  - [登录和钥匙串验证](macos/login/README.md)
-    - [配对管理](macos/login/managing-pairing.md)
+- [集成至 macOS](macos/README.md)（100%）
+  - [使用 HMAC-SHA1 进行线下挑战答应](macos/offline-authentication/README.md)（100%）
+    - [配置 HMAC-SHA1 挑战答应](macos/offline-authentication/configuration.md)（100%）
+  - [登录和钥匙串验证](macos/login/README.md)（100%）
+    - [配对管理](macos/login/managing-pairing.md)（100%）
