@@ -85,7 +85,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [使用授权密钥](docker-content-trust/delegation-roles/using-a-delegation-key.md)
     - [在 CI 系统上自动签名镜像](docker-content-trust/delegation-roles/automating-image-signing-on-ci-systems.md)
   - [删除一个授权密钥](docker-content-trust/removing-a-delegation-key.md)
-  - [旋转一个钥匙（？）](docker-content-trust/key-rotation/README.md)
+  - [轮换钥匙](docker-content-trust/key-rotation/README.md)
     - [钥匙镜像](docker-content-trust/key-rotation/snapshot-key.md)
     - [时间戳钥匙](docker-content-trust/key-rotation/timestamp-key.md)
     - [目标钥匙](docker-content-trust/key-rotation/targets-key.md)
