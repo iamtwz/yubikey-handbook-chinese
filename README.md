@@ -24,7 +24,13 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
 ## 译者
 
-目前这本书由 Wenzel Tian 使用他的二把刀初中英语在进行翻译，未特别注明的应该都是我翻译的了，如果有问题，请提交 Issues。
+目前这本书的译者有：
+
+* 使用二把刀初中英语的 [Wenzel Tian](@iamtwz)，未特别注明的应该都是他翻译的了。
+
+* 某谜之 [Horo](@KenOokamiHoro) 
+
+如果有问题，请提交 Issues。
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
 
@@ -50,7 +56,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [生成密钥吊销列表 (KRL) ](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)（100%）
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
   - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)（100%）
-- [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)
+- [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)（100%）
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)
     - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)
     - [配置用于二步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)
