@@ -1,10 +1,10 @@
-### Login and keychain authentication
+### 登录和钥匙串验证
 
-macOS Sierra (10.12) ships with an improved SmartCard integration, including support for SmartCard Extensions<sup>1</sup>, an updated CCID driver and bug fixes on the PC/SC framework<sup>2</sup>. This translates into a clean and simple configuration for using a Yubikey to login to the macOS.
+macOS Sierra (10.12) 搭载了改进的智能卡集成，包括对 SmartCard Extensions<sup>1</sup> 的支持，更新的 CCID 驱动和对 PC/SC framework<sup>2</sup>. 的修复。这些可以为使用 Yubikey 登录到 macOS 提供一个清晰简洁的配置。
 
-The login screen as well as Keychain-related operations will show a _PIN_ placeholder instead of _Password_ if the Yubikey is plugged in and has been paired before.
+如果插入已经配对的 Yubikey，钥匙串相关的登录操作会显示一个 _PIN_ 占位符（而不是_密码_）。
 
-**References**
+**参考资料**
 
 1. <https://developer.apple.com/library/content/releasenotes/MacOSX/WhatsNewInOSX/Articles/OSXv10.html>
 
