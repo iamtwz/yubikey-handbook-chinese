@@ -62,8 +62,8 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [配置用于二步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
     - [安装 libpam-yubico](yubico-otp/setting-up-a-remote-server/installing-libpam-yubico.md)（100%）
     - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)（100%）
-    - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)
-  - [测试](yubico-otp/testing.md)
+    - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)（100%）
+  - [测试](yubico-otp/testing.md)（100%）
 - [OATH 认证（TOTP 和 HOTP）](oath/README.md)（0%）
   - [使用 Yubico 认证器](oath/yubico-authenticator.md)（0%）
 - [U2F （安全钥匙）](u2f/README.md)（0%）
