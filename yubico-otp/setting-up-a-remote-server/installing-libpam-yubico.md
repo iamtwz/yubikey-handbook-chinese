@@ -1,8 +1,8 @@
-#### Installing libpam-yubico
+#### 安装 libpam-yubico
 
-The package `libpam-yubico` provides the requires libraries to integrate Yubico's software into PAM (Linux Pluggable Authentication Modules).
+`libpam-yubico` 提供了将 Yubico 软件集成到 PAM（Linux Pluggable Authentication Modules，Linux 可插拔身份验证模块）所需要的依赖。
 
-Add the PPA and install the package:
+可以通过添加 PPA 仓库的方式安装：
 
 ```sh
 ❯ apt-get install -y vim software-properties-common
