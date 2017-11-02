@@ -1,4 +1,4 @@
-#### 管理配对
+#### 配对管理
 
 随 macOS 提供的 `sc_auth` 工具 (_smart card authorization setup script，智能卡认证设置脚本_) 可以执行大量的和智能卡相关的操作。
 
