@@ -1,74 +1,74 @@
-#### Configuring HMAC-SHA1 Challenge-Response
+#### 配置 HMAC-SHA1 Challenge-Response 验证
 
-The first step is to set up the Yubikey for HMAC-SHA1 Challenge-Response authentication. This can be done either with the [Yubikey Personalization Tool](https://itunes.apple.com/us/app/Yubikey-personalization-tool/id638161122?mt=12) or via the `ykpersonalize` command-line utility.
+第一步是为验证设置你的 Yubikey，可以通过 [Yubikey 设置工具](https://itunes.apple.com/us/app/Yubikey-personalization-tool/id638161122?mt=12) 或 `ykpersonalize` 命令行工具完成。
 
-##### Using the _ykpersonalize_ command-line utility
+##### 通过 _ykpersonalize_ 工具
 
-First, start by installing `ykpers`:
+从安装 `ykpers` 开始:
 
 ```sh
 ❯ brew install ykpers
 ```
 
-Then:
+然后:
 
 ```sh
 ❯ ykpersonalize -2 -ochal-resp -ochal-hmac -ohmac-lt64 -ochal-btn-trig
 ```
 
-Which basically means:
+基本含义为:
 
-- Use slot 2 (`-2`)
-- Set challenge-response mode (`-ochal-resp`)
-- Generate HMAC-SHA1 challenge responses (`-ochal-hmac`)
-- Calculate HMAC on less than 64 bytes input (`-ohmac-lt64`)
-- The Yubikey will allow its serial number to be read using an API call (`-oserial-api-visible`). -
+- 使用 2 号插槽 (`-2`)
+- 使用 challenge-response 模式（`-ochal-resp`）
+- 生成 HMAC-SHA1 challenge 响应（`-ochal-hmac`）
+- 在小于 64 字节的输入集上计算 HMAC（`-ohmac-lt64`）
+- 允许通过 API 调用读取这个 Yubikey 的序列号（`-oserial-api-visible`）。 -
 
-##### Using the _Yubikey Personalization Tool_
+##### 使用 _Yubikey 设置 Tool_
 
-1. Plug in your Yubikey
-2. Click _Challenge-Response_
-3. Select _HMAC-SHA1_ mode
-4. Choose _Configuration Slot 2_
-5. Select _Require user input (button press)_
-6. Select _Variable input_ as HMAC-SHA1 mode
-7. Click _Write Configuration_ and don't save any logging file as it exposes the secret key written to the Yubikey
+1. 插入你的 Yubikey
+2. 点击 _Challenge-Response_
+3. 选择 _HMAC-SHA1_ 模式
+4. 选择 _Configuration Slot 2_
+5. 选择 _Require user input (button press)_
+6. 设置 _Variable input_ 为 HMAC-SHA1 模式
+7. 点击 _Write Configuration_ 不要写入任何日志，因为这会暴露写入到 Yubikey 中的私钥。
 
-##### Generating the initial challenge
+##### 生成初始 challenge
 
-Install `pam_yubico`:
+安装 `pam_yubico`:
 
 ```sh
 ❯ brew install pam_yubico
 ❯ mkdir -m0700 -p ~/.yubico
 ```
 
-Generate the initial challenge request:
+生成初始 Challenge 请求:
 
 ```
 ❯ ykpamcfg -2
 ```
 
-##### Enable Challenge-Response authentication module
+##### 启用 Challenge-Response 验证模块
 
-Confirm the `pam_yubico.so` file exists to avoid being locked out of `sudo`:
+为了避免被 `sudo` 锁定确定 `pam_yubico.so` 是否存在 :
 
 ```sh
 ❯ test -e /usr/local/opt/pam_yubico/lib/security/pam_yubico.so && echo "File exists, you may proceed."
 ```
 
-Start a new shell session with `sudo` just to make sure you can still find your way out in case there is an error with the PAM file.
+用 `sudo` 打开一个新的 shell（确保你在把 PAM 文件改坏以后还能改回来）。
 
-Then edit `/etc/pam.d/sudo` on another shell session and add the following line as the first one:
+然后用另一个 shell 将下面一行添加到 `/etc/pam.d/sudo` 起始：
 
 ```sh
 auth       required     /usr/local/opt/pam_yubico/lib/security/pam_yubico.so mode=challenge-response
 ```
 
-Confirm you need to touch the Yubikey by running the following command on a new shell session:
+开启一个新的 shell ，确认你在运行相应的命令时需要 Yubikey 操作:
 
 ```sh
 ❯ sudo -l
 ```
 
-Notice that you will actually need to touch the Yubikey twice - one to verify the current challenge on file and another to generate a new challenge-response on success.
+记住你要按 Yubikey 两次————一次用于验证现有的 challenge ，一次用于在成功以后生成新的 challenge。
