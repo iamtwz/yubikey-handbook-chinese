@@ -57,11 +57,11 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
   - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)（100%）
 - [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)（100%）
-  - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)
-    - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)
-    - [配置用于二步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)
-    - [安装 libpam-yubico](yubico-otp/setting-up-a-remote-server/installing-libpam-yubico.md)
-    - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)
+  - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)（100%）
+    - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)（100%）
+    - [配置用于二步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
+    - [安装 libpam-yubico](yubico-otp/setting-up-a-remote-server/installing-libpam-yubico.md)（100%）
+    - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)（100%）
     - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)
   - [测试](yubico-otp/testing.md)
 - [OATH 认证（TOTP 和 HOTP）](oath/README.md)
