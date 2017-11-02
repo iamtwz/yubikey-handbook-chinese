@@ -1,6 +1,6 @@
-#### Configuring OpenSSH (sshd) for 2FA authentication
+#### 为 OpenSSH 启用双因素认证
 
-Enable strong 2FA authentication by updating the `/etc/ssh/sshd_config` with the following changes:
+在 `/etc/ssh/sshd_config` 中加入下面的选项启用双因素认证：
 
 ```sh
 # Require public key *and* password authentication. Without this, a valid public
@@ -19,14 +19,14 @@ ChallengeResponseAuthentication no
 UsePAM yes
 ```
 
-If you want to login with the _root_ user via ssh, add or update the `PermitRootLogin` under the same file, replace `prohibit-password` by `yes`:
+如果你要通过 root 用户登录，添加或修改同一个文件中的 `PermitRootLogin` 选项，将 `prohibit-password` 替换成 `yes`：
 
 ```sh
 # Enable root login via ssh.
 PermitRootLogin yes
 ```
 
-Restart `ssh`. Note that if you're already inside an ssh session, you won't be disconnected.
+重新启动 `ssh` 服务，注意这不会中断你现有的会话。
 
 ```sh
 ❯ service ssh restart
