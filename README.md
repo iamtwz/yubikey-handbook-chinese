@@ -30,6 +30,8 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
 * 某谜之 [Horo](@KenOokamiHoro) 
 
+* 咸鱼一只 [inkiron](@inkiron)
+
 如果有问题，请提交 Issues。
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
