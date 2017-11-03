@@ -16,7 +16,7 @@
 
 数字签名 - Digital Signature
 
-弃用密钥 - Retired Key
+遗存密钥 - Retired Key
 
 
 
