@@ -58,10 +58,10 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [生成密钥吊销列表 (KRL) ](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)（100%）
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
   - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)（100%）
-- [通过 Yubico OTP 进行两步验证（服务端）](yubico-otp/README.md)（100%）
+- [通过 Yubico OTP 进行双因素认证（服务端）](yubico-otp/README.md)（100%）
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)（100%）
     - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)（100%）
-    - [配置用于两步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
+    - [为 OpenSSH 启用双因素认证（sshd）](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
     - [安装 libpam-yubico](yubico-otp/setting-up-a-remote-server/installing-libpam-yubico.md)（100%）
     - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)（100%）
     - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)（100%）

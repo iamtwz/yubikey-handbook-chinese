@@ -1,4 +1,4 @@
-#### 为 OpenSSH 启用双因素认证
+#### 为 OpenSSH 启用双因素认证（sshd）
 
 在 `/etc/ssh/sshd_config` 中加入下面的选项启用双因素认证：
 
