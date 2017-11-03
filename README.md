@@ -2,9 +2,9 @@
 
 _Now featured on the [3rd-Party Labs (3PL) - YubiKey Innovations and Inspirations](https://forum.yubico.com/viewtopic.php?f=8&t=1942) compilation_.
 
-Yubikey 是一个由 Yubico 制作的硬件设备，能提供多种形式的高强度的认证与加密。它有许多有趣的软件与用途。
+Yubikey 是由 Yubico 制作的一个硬件设备，它能提供多种形式的高强度的认证与加密，能运用在不同的地方。除此之外，Yubico还有许多有趣的软件。
 
-_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要讲解 Yubikey 4 和 Yubikey 4 Nano，但是经过一些改动，部分内容也一样适用于 Yubikey NEO。
+_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
 
 ![](./images/yubikey-plugged-in.jpg)
 
@@ -20,7 +20,7 @@ https://github.com/ruimarinho/yubikey-handbook
 
 ## 作者
 
-Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键任务和维护高可用系统。[阅读更多](introduction/about-the-author.md)
+Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）日常是一名软件开发者，下班后是一名安全工程师，在周末时是个网络管理员。丰富的技能栈让他可以规划并建设大型基础建设项目。他有处理棘手任务的专业性，例如维护需要安全保障措施严格的高可用性系统。[阅读更多](introduction/about-the-author.md)
 
 ## 译者
 
