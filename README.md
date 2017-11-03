@@ -2,9 +2,9 @@
 
 _Now featured on the [3rd-Party Labs (3PL) - YubiKey Innovations and Inspirations](https://forum.yubico.com/viewtopic.php?f=8&t=1942) compilation_.
 
-Yubikey 是一个由 Yubico 制作的硬件设备，能提供多种形式的高强度的认证与加密。它有许多有趣的软件与用途。
+Yubikey 是由 Yubico 制作的一个硬件设备，它能提供多种形式的高强度的认证与加密，能运用在不同的地方。除此之外，Yubico还有许多有趣的软件。
 
-_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要讲解 Yubikey 4 和 Yubikey 4 Nano，但是经过一些改动，部分内容也一样适用于 Yubikey NEO。
+_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
 
 ![](./images/yubikey-plugged-in.jpg)
 
@@ -20,7 +20,7 @@ https://github.com/ruimarinho/yubikey-handbook
 
 ## 作者
 
-Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）在白天是软件攻城狮，晚上是安全研究猿，周末是网络攻城狮。丰富的技能栈让他可以规划建设大型基础设施项目，专门从事安全第一的关键任务和维护高可用系统。[阅读更多](introduction/about-the-author.md)
+Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）日常是一名软件开发者，下班后是一名安全工程师，在周末时是个网络管理员。丰富的技能栈让他可以规划并建设大型基础建设项目。他有处理棘手任务的专业性，例如维护需要安全保障措施严格的高可用性系统。[阅读更多](introduction/about-the-author.md)
 
 ## 译者
 
@@ -30,11 +30,13 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 
 * 某谜之 [Horo](@KenOokamiHoro) 
 
+* 咸鱼一只 [inkiron](@inkiron)
+
 如果有问题，请提交 Issues。
 
 我们遵循 [中文排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 进行排版。
 
-许多专有名词不知道怎么翻译比较好，翻译完成的内容也欠缺润色，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译。
+许多专有名词不知道怎么翻译比较好，Docker 部分因为不会 Docker 可能需要另外一个人帮忙翻译，如果你有兴趣欢迎加入我们。
 
 在本书中，译者注的内容均写在「【】」中。
 
@@ -56,10 +58,10 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [生成密钥吊销列表 (KRL) ](ssh/authenticating-ssh-via-user-certificates-server/generating-the-key-revocation-list-krl.md)（100%）
 - [验证 SSH 服务器证书（客户端）](ssh/authenticating-ssh-host-certificates-client/README.md)（100%）
   - [附加内容](ssh/authenticating-ssh-host-certificates-client/additional-resources.md)（100%）
-- [使用 Yubico OTP 进行二步验证（服务端）](yubico-otp/README.md)（100%）
+- [通过 Yubico OTP 进行两步验证（服务端）](yubico-otp/README.md)（100%）
   - [设置远程服务器](yubico-otp/setting-up-a-remote-server/README.md)（100%）
     - [环境配置（仅限演示）](yubico-otp/setting-up-a-remote-server/prerequisites-demonstration-only.md)（100%）
-    - [配置用于二步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
+    - [配置用于两步验证的 OpenSSH (sshd)](yubico-otp/setting-up-a-remote-server/configuring-openssh-sshd-for-2fa-authentication.md)（100%）
     - [安装 libpam-yubico](yubico-otp/setting-up-a-remote-server/installing-libpam-yubico.md)（100%）
     - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)（100%）
     - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)（100%）
@@ -83,7 +85,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [使用授权密钥](docker-content-trust/delegation-roles/using-a-delegation-key.md)
     - [在 CI 系统上自动签名镜像](docker-content-trust/delegation-roles/automating-image-signing-on-ci-systems.md)
   - [删除一个授权密钥](docker-content-trust/removing-a-delegation-key.md)
-  - [旋转一个钥匙（？）](docker-content-trust/key-rotation/README.md)
+  - [轮换钥匙](docker-content-trust/key-rotation/README.md)
     - [钥匙镜像](docker-content-trust/key-rotation/snapshot-key.md)
     - [时间戳钥匙](docker-content-trust/key-rotation/timestamp-key.md)
     - [目标钥匙](docker-content-trust/key-rotation/targets-key.md)
