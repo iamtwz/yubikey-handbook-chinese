@@ -52,7 +52,7 @@ Yubikey 最酷的特性之一就是通过 PKCS#11 来验证 SSH。 把私钥存�
   ❯ yubico-piv-tool -a status
   ```
 
-6. 通过 PKCS#11 添加私钥添加到本地 ssh-agent：
+6. 通过 PKCS#11 添加私钥到本地 ssh-agent：
 
   ```sh
   ❯ ssh-add -s /usr/local/opt/opensc/lib/pkcs11/opensc-pkcs11.so
