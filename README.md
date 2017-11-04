@@ -66,7 +66,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [创建 Yubikey PAM 验证策略](yubico-otp/setting-up-a-remote-server/creating-the-yubikey-pam-authentication-policy.md)（100%）
     - [Yubikey 验证模块](yubico-otp/setting-up-a-remote-server/yubikey-authentication-module.md)（100%）
   - [测试](yubico-otp/testing.md)（100%）
-- [OATH 认证（TOTP 和 HOTP）](oath/README.md)（0%）
+- [OATH 认证（TOTP 和 HOTP）](oath/README.md)（100%）
   - [使用 Yubico 认证器](oath/yubico-authenticator.md)（0%）
 - [U2F （安全钥匙）](u2f/README.md)（0%）
 - [Docker 内容信任](docker-content-trust/README.md)
