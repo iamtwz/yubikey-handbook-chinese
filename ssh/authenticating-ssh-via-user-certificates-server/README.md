@@ -18,7 +18,7 @@
 
 现在让我们来创建 _数字证书认证机构_。
 
-1. 使用一台搭载气隙系统【译者注：即与互联网物理隔离】的计算机，生成用户证书颁发机构的根证书：
+1. 使用一台处于气隙系统下【译者注：即与互联网物理隔离】的计算机，生成用户证书颁发机构的根证书：
 
   ```sh
   ❯ ssh-keygen -C "SSH User Certificate Authority" -f sshuser.root.ca
@@ -33,13 +33,13 @@
   AuthorizedPrincipalsFile /etc/ssh/auth_principals/%u
   ```
 
-4. 让用户或客户端从 Yubikey 中提取他们的公钥以便在搭载气隙系统的计算机中使用新 CA 签名来认证：
+4. 让用户或客户端从 Yubikey 中提取他们的公钥以便在处于气隙系统下的计算机中使用新 CA 签名来认证：
 
   ```sh
   ssh-keygen -D /usr/local/opt/opensc/lib/pkcs11/opensc-pkcs11.so -e
   ```
 
-5. 在被搭载气隙系统的计算机签名的用户证书， 要特别注意一下登录名（`<user>`），确保这个证书能够指向被声明的主体（`<principals>`，使用逗号分隔），证书到期时间（`+52w`）和序列号（`<serial>`）。
+5. 在被处于气隙系统下的计算机签名的用户证书， 要特别注意一下登录名（`<user>`），确保这个证书能够指向被声明的主体（`<principals>`，使用逗号分隔），证书到期时间（`+52w`）和序列号（`<serial>`）。
 
   ```sh
   ❯ ssh-keygen -s sshuser.root.ca -I <user> -n <principals> -V +52w -z <serial> <user>.pub

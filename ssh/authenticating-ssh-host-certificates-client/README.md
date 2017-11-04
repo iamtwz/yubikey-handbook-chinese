@@ -2,7 +2,7 @@
 
 和 [SSH 用户证书](#remote-ssh-authentication-via-user certificates) 类似，使用客户端机构认证来验证主机。需要一个 SSH 服务器数字证书认证机构签发服务器证书，客户端只需要保存 CA 的公钥。
 
-1. 使用一台搭载气隙系统的计算机来生成服务器数字证书认证机构的根证书：
+1. 使用一台处于气隙系统下的计算机来生成服务器数字证书认证机构的根证书：
 
   ```sh
   ❯ ssh-keygen -C "SSH Server Certificate Authority" -f sshserver.root.ca
