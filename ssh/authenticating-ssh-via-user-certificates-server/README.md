@@ -1,6 +1,6 @@
 ## 使用用户证书验证 SSH （服务端）
 
-在以安全的前提下保障可靠性、可控性和一致性是非常复杂的。我们可以利用 SSH 又或者说 OpenSSH 来替代所依赖的中央身份验证（比如 LDAP 或者 Kerberos）
+在以安全为前提下要保障可靠性、可控性和一致性是非常复杂的。我们可以利用 SSH 又或者说 OpenSSH 来替代所依赖的中央身份验证（比如 LDAP 或者 Kerberos）
 
 除了 [通过 PIV 和 PKCS#11 验证 SSH](#authenticating-ssh-client-access-with-piv-and-pkcs-11) 之外，还可以增加远程 SSH 验证的安全性。Facebook 和 Yahoo 已经更换使用 SSH 用户证书来避免中心认证系统宕机。因为他不支持拓展（需要 1:1  匹配），所以也利于维持 `authorized_keys` 文件先后一致。
 
