@@ -18,5 +18,11 @@
 
 遗存密钥 - Retired Key
 
+共享密钥 - Shared secret
+
+气隙（系统） - Air gapped (System)
+
+SSH 服务器数字证书认证机构 - SSH Server Certificate Authority
+
 
 
