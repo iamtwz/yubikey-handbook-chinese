@@ -1,6 +1,6 @@
 ### 生成密钥吊销列表（KRL）
 
-KRL 是一种可以吊销已签名 SSH 证书的简洁的二进制形式文件。
+KRL 是一种精巧的二进制文件格式，它的作用是吊销已签名的 SSH 证书。
 
 1. 创建一个空的吊销列表：
 
@@ -14,13 +14,13 @@ KRL 是一种可以吊销已签名 SSH 证书的简洁的二进制形式文件�
   ❯ RevokedKeys /etc/ssh/revoked_keys
   ```
 
-3. 需要的时候，可以吊销第一个签名的证书：
+3. 当必要的时候，可以吊销第一个签名的证书：
 
   ```sh
   ❯ ssh-keygen -k -f revoked_keys -s sshuser.root.ca.pub foo-cert.pub
   ```
 
-4. 需要时也可以增加更多的要吊销的证书（使用 `-u`）：
+4. 当你有增加更多的待吊销证书的需求时（使用 `-u`）：
 
   ```sh
   ❯ ssh-keygen -k -f revoked_keys -s sshuser.root.ca.pub -u bar-cert.pub
