@@ -20,7 +20,7 @@ https://github.com/ruimarinho/yubikey-handbook
 
 ## 作者
 
-Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）日常是一名软件开发者，下班后是一名安全工程师，在周末时是个网络管理员。丰富的技能栈让他可以规划并建设大型基础建设项目。他有处理棘手任务的专业性，例如维护需要安全保障措施严格的高可用性系统。[阅读更多](introduction/about-the-author.md)
+Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitter.com/ruipmarinho)，[npm](https://www.npmjs.com/~ruimarinho)）日常是一名软件开发者，下班后是一名安全工程师，在周末时是个网络管理员。丰富的技能栈让他可以规划并建设大型基础建设项目。他有处理棘手任务的专业性，例如维护要求安全保障措施严格的高可用性系统。[阅读更多](introduction/about-the-author.md)
 
 ## 译者
 
