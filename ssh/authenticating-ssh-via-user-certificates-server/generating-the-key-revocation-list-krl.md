@@ -34,4 +34,4 @@ KRL 是一种精巧的二进制文件格式，它的作用是吊销已签名的 
 
 6. 使用 `rsync`，`scp` 或者其他编排工具将`revoked_keys` 分发给每个主机（`/etc/ssh/revoked_keys`）
 
-注意：只要序列号正常工作， `ssh-keygen` 不需要使用签名的公共证书去吊销。但是，目前在 OpenSSH 7.2p2 (Ubuntu) 上无效。
+注意：只要序列号正常工作， `ssh-keygen` 不需要使用签名的公共证书去吊销，但目前在 OpenSSH 7.2p2 (Ubuntu) 上无效。
