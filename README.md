@@ -90,21 +90,21 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [时间戳钥匙](docker-content-trust/key-rotation/timestamp-key.md)
     - [目标钥匙](docker-content-trust/key-rotation/targets-key.md)
   - [阈值签名验证](docker-content-trust/threshold-validation-signing.md)
-- [OpenPGP 套件](openpgp/README.md)
-  - [触摸保护](openpgp/touch-protection/README.md)
-    - [启用触摸保护](openpgp/touch-protection/enabling-touch-protection.md)
-  - [导入钥匙](openpgp/importing-keys.md)
-  - [修改元数据](openpgp/editing-metadata.md)
-  - [Git 签名](openpgp/git-signing/README.md)
-    - [Tags 签名](openpgp/git-signing/signing-tags.md)
-    - [Tags 验证](openpgp/git-signing/verifying-tags.md)
-    - [Commits 签名](openpgp/git-signing/signing-commits.md)
-    - [Commits 验证](openpgp/git-signing/verifying-commits.md) 
-    - [Merges 签名](openpgp/git-signing/signing-merges.md)
-    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)
-  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)
-  - [故障排除](openpgp/troubleshooting/README.md)
-    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)
+- [OpenPGP 套件](openpgp/README.md)（0%）
+  - [触摸保护](openpgp/touch-protection/README.md)（0%）
+    - [启用触摸保护（0%）](openpgp/touch-protection/enabling-touch-protection.md)
+  - [导入钥匙](openpgp/importing-keys.md)（0%）
+  - [修改元数据（0%）](openpgp/editing-metadata.md)
+  - [Git 签名（0%）](openpgp/git-signing/README.md)
+    - [Tags 签名](openpgp/git-signing/signing-tags.md)（0%）
+    - [Tags 验证](openpgp/git-signing/verifying-tags.md)（0%）
+    - [Commits 签名（0%）](openpgp/git-signing/signing-commits.md)
+    - [Commits 验证](openpgp/git-signing/verifying-commits.md) （0%）
+    - [Merges 签名](openpgp/git-signing/signing-merges.md)（0%）
+    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（0%）
+  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)（0%）
+  - [故障排除](openpgp/troubleshooting/README.md)（0%）
+    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)（0%）
 - [集成至 macOS](macos/README.md)（100%）
   - [使用 HMAC-SHA1 进行线下挑战答应](macos/offline-authentication/README.md)（100%）
     - [配置 HMAC-SHA1 挑战答应](macos/offline-authentication/configuration.md)（100%）
