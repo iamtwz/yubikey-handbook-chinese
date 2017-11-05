@@ -1,6 +1,6 @@
-#### Enabling touch protection
+#### 启用触摸保护
 
-Install [https://developers.yubico.com/yubikey-manager/](Yubikey-manager) on a permanent destination:
+把 [Yubikey-manager](https://developers.yubico.com/yubikey-manager/) 安装在一个绝对路径：【译者注：homebrew 是 macOS 平台的包管理软件】
 
 ```sh
 ❯ brew install libu2f-host libusb swig ykpers
@@ -9,9 +9,9 @@ Install [https://developers.yubico.com/yubikey-manager/](Yubikey-manager) on a p
 ❯ pip install -e .
 ```
 
-The setup tools will automatically link the `ykman` binary to `/usr/local/bin/ykman` but the original git folder must remain on disk.
+安装工具会自动把 `ykman` 文件链接到 `/usr/local/bin/ykman` ，但是原始 git 文件夹必须保留在硬盘上。
 
-Then, enable touch protection for authentication (`aut`), encryption (`enc`) and signing (`sig`):
+然后，为验证（`aut`）， 加密（`enc`）和签名（`sig`）打开触摸验证：
 
 ```sh
 ❯ ykman openpgp touch aut on
@@ -19,7 +19,7 @@ Then, enable touch protection for authentication (`aut`), encryption (`enc`) and
 ❯ ykman openpgp touch sig on
 ```
 
-Confirm touch protection is enabled:
+确保触摸验证已经打开：
 
 ```sh
 ❯ ykman openpgp touch aut

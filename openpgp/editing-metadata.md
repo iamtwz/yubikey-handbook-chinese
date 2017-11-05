@@ -1,4 +1,4 @@
-### Editing metadata
+### 修改元数据
 
 Now that the private keys have been moved to the Yubikey, it's time to configure some basic properties, such as changing the default management PIN (what GPG calls the _Admin PIN_) and also the regular PIN whenever the private key is accessed.
 

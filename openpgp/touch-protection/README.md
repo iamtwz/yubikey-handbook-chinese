@@ -1,17 +1,18 @@
-### Touch protection
+### 触摸保护
 
-The Yubikey 4 introduces a new touch feature<sup>1</sup>that enables a second layer of protection when using a private key stored on the device. The access will be conditioned by a user physically triggering the touch sensor, which detracts malware issuing command on the Yubikey without user knowledge.
+Yubikey 4 实现了新的触摸功能<sup>1</sup>，当你在设备上存储私钥时，可以实现第二层保护。当访问 Yubikey 时需要用户物理触碰触摸传感器，这样可以避免恶意软件在用户不知情的情况下访问 Yubikey。
 
-The touch event is requested for up to 15 seconds, after which the Yubikey turns off the notification.
+触摸事件最多被请求 15 秒，随后便会关闭通知。
 
-The touch sensor can be configured with the following parameters:
+触摸传感器可以配置以下参数：
 
-- **off**: touch is disabled
-- **on**: touch is enabled
-- **fix**: touch is enabled and can not be disabled unless a new private key is generated or imported.
+- **off**：触摸被关闭。
+- **on**：触摸打开。
+- **fix**：触摸被打开，除非生成或者导入新的私钥，触摸不能被关闭。
 
-Touch protection can be configured individually on each one of the GPG private keys and requires the use of the Admin PIN.
+可以给每个 GPG 私钥设置触摸保护，并且需要管理员密码。
 
-**References**
+**引用**
 
 1. <https://developers.yubico.com/PGP/Card_edit.html>
+

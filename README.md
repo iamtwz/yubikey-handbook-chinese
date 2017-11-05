@@ -90,10 +90,10 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
     - [时间戳钥匙](docker-content-trust/key-rotation/timestamp-key.md)
     - [目标钥匙](docker-content-trust/key-rotation/targets-key.md)
   - [阈值签名验证](docker-content-trust/threshold-validation-signing.md)
-- [OpenPGP 套件](openpgp/README.md)（0%）
-  - [触摸保护](openpgp/touch-protection/README.md)（0%）
-    - [启用触摸保护](openpgp/touch-protection/enabling-touch-protection.md)（0%）
-  - [导入钥匙](openpgp/importing-keys.md)（0%）
+- [OpenPGP 套件](openpgp/README.md)（100%）
+  - [触摸保护](openpgp/touch-protection/README.md)（100%）
+    - [启用触摸保护](openpgp/touch-protection/enabling-touch-protection.md)（100%）
+  - [导入钥匙](openpgp/importing-keys.md)（100%）
   - [修改元数据](openpgp/editing-metadata.md)（0%）
   - [Git 签名](openpgp/git-signing/README.md)（0%）
     - [Tags 签名](openpgp/git-signing/signing-tags.md)（0%）
