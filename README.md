@@ -92,13 +92,13 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [阈值签名验证](docker-content-trust/threshold-validation-signing.md)
 - [OpenPGP 套件](openpgp/README.md)（0%）
   - [触摸保护](openpgp/touch-protection/README.md)（0%）
-    - [启用触摸保护（0%）](openpgp/touch-protection/enabling-touch-protection.md)
+    - [启用触摸保护](openpgp/touch-protection/enabling-touch-protection.md)（0%）
   - [导入钥匙](openpgp/importing-keys.md)（0%）
-  - [修改元数据（0%）](openpgp/editing-metadata.md)
-  - [Git 签名（0%）](openpgp/git-signing/README.md)
+  - [修改元数据](openpgp/editing-metadata.md)（0%）
+  - [Git 签名](openpgp/git-signing/README.md)（0%）
     - [Tags 签名](openpgp/git-signing/signing-tags.md)（0%）
     - [Tags 验证](openpgp/git-signing/verifying-tags.md)（0%）
-    - [Commits 签名（0%）](openpgp/git-signing/signing-commits.md)
+    - [Commits 签名](openpgp/git-signing/signing-commits.md)（0%）
     - [Commits 验证](openpgp/git-signing/verifying-commits.md) （0%）
     - [Merges 签名](openpgp/git-signing/signing-merges.md)（0%）
     - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（0%）
