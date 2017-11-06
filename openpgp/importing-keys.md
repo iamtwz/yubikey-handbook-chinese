@@ -1,8 +1,10 @@
-### Importing keys
+### 导入钥匙
 
-GPG private keys can be copied or moved to the Yubikey. The following examples moves them.
+GPG 私钥可以被复制或者导入进 Yubikey，下面的例子是把私钥导入 Yubikey。
 
-```
+【译者注：私钥一旦被导入 Yubikey 即无法导出，**建议冷备份**】
+
+```sh
 ❯ gpg --edit-key <keyId>
 
 gpg> toggle
@@ -33,15 +35,15 @@ Your selection? 3
 gpg> quit
 ```
 
-Confirm the private keys have been moved to the Yubikey:
+确保私钥已经被移动到 Yubikey 中：
 
 ```sh
 ❯ gpg --list-secret-keys
 ```
 
-If you see `ssb>`, it indicates a stub to the private key on Yubikey, which in this case means the move was successful.
+如果你看到 `ssb>`，它显示的的是 Yubikey 上私钥的存根，意味着导入已经成功。
 
-Then, check the card status:
+然后检查一下设备状态：
 
 ```sh
 ❯ gpg --card-status
