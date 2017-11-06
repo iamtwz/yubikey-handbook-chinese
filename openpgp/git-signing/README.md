@@ -1,3 +1,3 @@
-### Git signing
+### Git 签名
 
-Both tags and commits can be signed by the Yubikey GPG keys.
+Tags 和 commits 都可以通过 Yubikey GPG 钥匙来进行签名。
