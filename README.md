@@ -98,13 +98,13 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [Git 签名](openpgp/git-signing/README.md)（100%）
     - [Tags 签名](openpgp/git-signing/signing-tags.md)（100%）
     - [Tags 验证](openpgp/git-signing/verifying-tags.md)（100%）
-    - [Commits 签名](openpgp/git-signing/signing-commits.md)（0%）
-    - [Commits 验证](openpgp/git-signing/verifying-commits.md) （0%）
-    - [Merges 签名](openpgp/git-signing/signing-merges.md)（0%）
-    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（0%）
-  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)（0%）
-  - [故障排除](openpgp/troubleshooting/README.md)（0%）
-    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)（0%）
+    - [Commits 签名](openpgp/git-signing/signing-commits.md)（100%）
+    - [Commits 验证](openpgp/git-signing/verifying-commits.md) （100%）
+    - [Merges 签名](openpgp/git-signing/signing-merges.md)（100%）
+    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（100%）
+  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)（100%）
+  - [故障排除](openpgp/troubleshooting/README.md)（100%）
+    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)（100%）
 - [集成至 macOS](macos/README.md)（100%）
   - [使用 HMAC-SHA1 进行线下挑战答应](macos/offline-authentication/README.md)（100%）
     - [配置 HMAC-SHA1 挑战答应](macos/offline-authentication/configuration.md)（100%）

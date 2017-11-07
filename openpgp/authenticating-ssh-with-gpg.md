@@ -1,10 +1,10 @@
-### Authenticating SSH with GPG
+### 使用 GPG 进行 SSH 验证
 
-While technically it's certainly possible to authenticate SSH sessions using GPG, `gpg-agent` does not always have a friendly co-existence with `ssh-agent`.
+技术上来讲的话，使用 GPG 来验证 SSH 会话并没有问题。但是 `gpg-agent`  对 `ssh-agent` 的支持并不友好。
 
-Using PIV for authenticating SSH remains the recommended solution.
+相比而言更推荐使用 PIV 来进行 SSH 验证。
 
-Enable `enable-ssh-support` and `write-env-file` under `~/.gnupg/gpg-agent.conf`:
+在 `~/.gnupg/gpg-agent.conf` 文件下启用 `enable-ssh-support` 和 `write-env-file` ：
 
 ```
 default-cache-ttl 600
