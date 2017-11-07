@@ -1,6 +1,6 @@
-#### Verifying tags
+#### Tags 验证
 
-Import the public GPG key of the signer first and then use of any of the following commands to check for the `Good signature` message:
+首先导入签名者的 GPG 公钥，然后执行以下任意命令来获得 `Good signature` 消息：
 
 ```sh
 ❯ git tag -v 1.0.0
