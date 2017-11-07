@@ -69,7 +69,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 - [OATH 认证（TOTP 和 HOTP）](oath/README.md)（100%）
   - [使用 Yubico 认证器](oath/yubico-authenticator.md)（100%）
 - [U2F （安全钥匙）](u2f/README.md)（100%）
-- [Docker 内容信任](docker-content-trust/README.md)
+- [Docker 内容信任](docker-content-trust/README.md)（100%）
   - [钥匙管理](docker-content-trust/key-management.md)
   - [运行 Notary 服务](docker-content-trust/notary/README.md)
     - [配置 Notary](docker-content-trust/notary/configuring.md)
