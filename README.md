@@ -4,7 +4,7 @@ _Now featured on the [3rd-Party Labs (3PL) - YubiKey Innovations and Inspiration
 
 Yubikey 是由 Yubico 制作的一个硬件设备，它能提供多种形式的高强度的认证与加密，能运用在不同的地方。除此之外，Yubico还有许多有趣的软件。
 
-_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
+_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano 的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
 
 ![](./images/yubikey-plugged-in.jpg)
 
