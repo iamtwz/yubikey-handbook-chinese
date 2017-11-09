@@ -10,7 +10,7 @@ _Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。
 
 _图源: Yubico_
 
-这本书现在可以 [免费在线阅读](https://ruimarinho.gitbooks.io/yubikey-handbook/content/)，并且可以下载它的 [PDF](https://www.gitbook.com/download/pdf/book/ruimarinho/yubikey-handbook), [ePUB](https://www.gitbook.com/download/epub/book/ruimarinho/yubikey-handbook) 或者 [Mobi/Kindle](https://www.gitbook.com/download/mobi/book/ruimarinho/yubikey-handbook) 版本。
+这本书现在可以 [免费在线阅读](https://iamtwz.gitbooks.io/yubikey-handbook-chinese/content/)，并且可以下载它的 [PDF](https://www.gitbook.com/download/pdf/book/iamtwz/yubikey-handbook-chinese)，[ePUB](https://www.gitbook.com/download/epub/book/iamtwz/yubikey-handbook-chinese) 或者 [Mobi/Kindle](https://www.gitbook.com/download/mobi/book/iamtwz/yubikey-handbook-chinese) 版本。
 
 # 关于
 
