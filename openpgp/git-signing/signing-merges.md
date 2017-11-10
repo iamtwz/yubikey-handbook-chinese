@@ -1,10 +1,10 @@
-#### Signing merges
+#### Merges 签名
 
-`git merge` can be instructed to inspect and reject when merging a commit/branch that does not carry a trusted GPG signature with the `--verify-signatures` command.
+`git merge` 命令可以在合并没有使用 `--verify-signatures` 命令带有不可信 GPG 签名的 commit/branch 时检查和拒绝
 
-If the branch being merged contains any commit that has not be signed and is valid, the merge will not proceed.
+如果被合并的分支中有任何没有被有效签名认证的提交，合并将不会继续。
 
-The merge commit itself can also be signed (using `-S`):
+Merge commit 本身也是可以被签名的（使用 `-S`）：
 
 ```
 ❯ git checkout -b enhancement/foo

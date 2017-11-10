@@ -4,13 +4,13 @@ _Now featured on the [3rd-Party Labs (3PL) - YubiKey Innovations and Inspiration
 
 Yubikey 是由 Yubico 制作的一个硬件设备，它能提供多种形式的高强度的认证与加密，能运用在不同的地方。除此之外，Yubico还有许多有趣的软件。
 
-_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
+_Yubikey 使用手册_ 意在发掘这些用途并生动形象的展示给你。 它主要内容是讲述 Yubikey 4 和 Yubikey 4 Nano 的使用方法。事实上，经过一些改动之后，部分内容也同样适用于 Yubikey NEO。
 
 ![](./images/yubikey-plugged-in.jpg)
 
 _图源: Yubico_
 
-这本书现在可以 [免费在线阅读](https://ruimarinho.gitbooks.io/yubikey-handbook/content/)，并且可以下载它的 [PDF](https://www.gitbook.com/download/pdf/book/ruimarinho/yubikey-handbook), [ePUB](https://www.gitbook.com/download/epub/book/ruimarinho/yubikey-handbook) 或者 [Mobi/Kindle](https://www.gitbook.com/download/mobi/book/ruimarinho/yubikey-handbook) 版本。
+这本书现在可以 [免费在线阅读](https://iamtwz.gitbooks.io/yubikey-handbook-chinese/content/)，并且可以下载它的 [PDF](https://www.gitbook.com/download/pdf/book/iamtwz/yubikey-handbook-chinese)，[ePUB](https://www.gitbook.com/download/epub/book/iamtwz/yubikey-handbook-chinese) 或者 [Mobi/Kindle](https://www.gitbook.com/download/mobi/book/iamtwz/yubikey-handbook-chinese) 版本。
 
 # 关于
 
@@ -69,7 +69,7 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
 - [OATH 认证（TOTP 和 HOTP）](oath/README.md)（100%）
   - [使用 Yubico 认证器](oath/yubico-authenticator.md)（100%）
 - [U2F （安全钥匙）](u2f/README.md)（100%）
-- [Docker 内容信任](docker-content-trust/README.md)
+- [Docker 内容信任](docker-content-trust/README.md)（100%）
   - [钥匙管理](docker-content-trust/key-management.md)
   - [运行 Notary 服务](docker-content-trust/notary/README.md)
     - [配置 Notary](docker-content-trust/notary/configuring.md)
@@ -94,17 +94,17 @@ Rui Marinho （[github](https://github.com/ruimarinho)，[twitter](https://twitt
   - [触摸保护](openpgp/touch-protection/README.md)（100%）
     - [启用触摸保护](openpgp/touch-protection/enabling-touch-protection.md)（100%）
   - [导入钥匙](openpgp/importing-keys.md)（100%）
-  - [修改元数据](openpgp/editing-metadata.md)（0%）
-  - [Git 签名](openpgp/git-signing/README.md)（0%）
-    - [Tags 签名](openpgp/git-signing/signing-tags.md)（0%）
-    - [Tags 验证](openpgp/git-signing/verifying-tags.md)（0%）
-    - [Commits 签名](openpgp/git-signing/signing-commits.md)（0%）
-    - [Commits 验证](openpgp/git-signing/verifying-commits.md) （0%）
-    - [Merges 签名](openpgp/git-signing/signing-merges.md)（0%）
-    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（0%）
-  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)（0%）
-  - [故障排除](openpgp/troubleshooting/README.md)（0%）
-    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)（0%）
+  - [修改元数据](openpgp/editing-metadata.md)（100%）
+  - [Git 签名](openpgp/git-signing/README.md)（100%）
+    - [Tags 签名](openpgp/git-signing/signing-tags.md)（100%）
+    - [Tags 验证](openpgp/git-signing/verifying-tags.md)（100%）
+    - [Commits 签名](openpgp/git-signing/signing-commits.md)（100%）
+    - [Commits 验证](openpgp/git-signing/verifying-commits.md) （100%）
+    - [Merges 签名](openpgp/git-signing/signing-merges.md)（100%）
+    - [Pushes 签名](openpgp/git-signing/signing-pushes.md)（100%）
+  - [使用 GPG 进行 SSH 验证](openpgp/authenticating-ssh-with-gpg.md)（100%）
+  - [故障排除](openpgp/troubleshooting/README.md)（100%）
+    - [GPG 无法签名数据](openpgp/troubleshooting/gpg-failed-to-sign-the-data.md)（100%）
 - [集成至 macOS](macos/README.md)（100%）
   - [使用 HMAC-SHA1 进行线下挑战答应](macos/offline-authentication/README.md)（100%）
     - [配置 HMAC-SHA1 挑战答应](macos/offline-authentication/configuration.md)（100%）

@@ -1,27 +1,27 @@
-#### Signing tags
+#### Tags 签名
 
-Assuming you have an extra local file for adding gitconfig settings on your main `~/.gitconfig` file:
+假设你有一个额外的文件可以在主 `~/.gitconfig` 中添加 gitconfig 设置：
 
 ```
 [include]
     path = .gitconfig.local
 ```
 
-Configure `~/.gitconfig.local` to point to the correct GPG signing key of your interest:
+配置 `~/.gitconfig.local` 文件让其指向你插入的 GPG 签名钥匙：
 
 ```sh
 [user]
     signingkey = <signingKeyId>
 ```
 
-Enable `git tag -m <message>` to automatically force signed tags:
+开启 `git tag -m <message>` 来自动强制签名 tags：
 
 ```
 [tag]
     forceSignAnnotated true
 ```
 
-Test if the signing key works by creating a new git tag on a temporary project:
+在临时项目上创建 tag 来测试签名钥匙是否工作正常：
 
 ```sh
 ❯ cd /tmp
@@ -34,7 +34,7 @@ Test if the signing key works by creating a new git tag on a temporary project:
 ❯ git tag 1.0.0 -s -m "Release 1.0.0"
 ```
 
-Enter the Yubikey GPG PIN and then touch it. Confirm the GPG signature was added to the tag:
+输入 Yubikey GPG PIN 然后触摸它，确保 GPG 签名已经被加入 tag 中：
 
 ```
 ❯ git show 1.0.0

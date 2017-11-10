@@ -1,8 +1,8 @@
 ### 修改元数据
 
-Now that the private keys have been moved to the Yubikey, it's time to configure some basic properties, such as changing the default management PIN (what GPG calls the _Admin PIN_) and also the regular PIN whenever the private key is accessed.
+现在私钥已经被移动到 Yubikey 当中了，也是时候做一些基本的设置了。比如改变默认的管理员 PIN（GPG 中叫做 _Admin PIN_）和访问私钥时需要的普通 PIN。
 
-```
+```sh
 ❯ gpg --card-edit
 
 gpg/card> admin

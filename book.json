@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "anchors",
+    "expandable-chapters-small",
+    "github",
+    "image-captions",
+    "splitter",
+    "toggle-chapters"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/iamtwz/yubikey-handbook-chinese"
+    }
+  }
+}

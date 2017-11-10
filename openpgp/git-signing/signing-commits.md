@@ -1,6 +1,6 @@
-#### Signing commits
+#### Commits 签名
 
-Continuing on the previous git repository, add a new file and commit it using the `-S` flag (not `-s` as that means `Signed-Off` on the commit command):
+在上文提到的 git 仓库中添加一个新文件，并使用 `-S` 标签来提交（commit）它。（注意不是 `-s` 标签，在 commit 命令下它意味着 `Signed-Off`）：
 
 ```
 ❯ touch biz
@@ -8,7 +8,7 @@ Continuing on the previous git repository, add a new file and commit it using th
 ❯ git commit -S -m "Add biz"
 ```
 
-You may enable auto-signing commits by adding the following to `~/.gitconfig.local`:
+你可以通过在 `~/.gitconfig.local` 文件中添加下列内容来开启 commit 自动签名功能：
 
 ```
 [commit]

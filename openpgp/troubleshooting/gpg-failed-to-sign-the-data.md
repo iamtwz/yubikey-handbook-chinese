@@ -1,27 +1,27 @@
-#### gpg failed to sign the data
+#### GPG 无法签名数据
 
-If you get the following messages when trying to sign a commit or tag:
+如果当你在对 tag 或者 commit 签名时遇到以下提示：
 
 ```
 error: gpg failed to sign the data
 error: unable to sign the tag
 ```
 
-First, attempt to remove and re-insert the Yubikey. Then, make sure the card status lists correctly:
+首先，物理插拔一下 Yubikey 并确保安全卡状态可以被正确的列出：
 
 ```
 ❯ gpg --card-status
 ```
 
-If you see:
+如果你看到：
 
 ```
 PIN retry counter : 0 0 3
 ```
 
-This means you have blocked the normal PIN due to many incorrect attempts. The third PIN represents the retry counter for the Admin PIN.
+这意味着你的正常 PIN 码因为输错次数太多而被锁定。第三个数字表示的是管理员 PIN 码的重试计数器。
 
-Unblock the normal PIN by entering the Admin PIN:
+通过输入管理员 PIN 码来解锁正常 PIN 码：
 
 ```
 ❯ gpg --card-edit
