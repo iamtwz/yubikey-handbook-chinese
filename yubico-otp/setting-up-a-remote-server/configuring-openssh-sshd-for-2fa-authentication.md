@@ -19,14 +19,14 @@ ChallengeResponseAuthentication no
 UsePAM yes
 ```
 
-如果你要通过 root 用户登录，添加或修改同一个文件中的 `PermitRootLogin` 选项，将 `prohibit-password` 替换成 `yes`：
+如果你要通过 root 用户登录，请添加或修改同一个文件中的 `PermitRootLogin` 选项，将 `prohibit-password` 替换成 `yes`：
 
 ```sh
 # Enable root login via ssh.
 PermitRootLogin yes
 ```
 
-重新启动 `ssh` 服务，注意这不会中断你现有的会话。
+重新启动 `ssh` 服务，这不会中断你现有的会话。
 
 ```sh
 ❯ service ssh restart
