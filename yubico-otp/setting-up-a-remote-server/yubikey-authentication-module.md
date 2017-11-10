@@ -2,9 +2,9 @@
 
 ##### 在 YubiCloud 上创建一个 API 
 
-从 [Yubico](https://upgrade.yubico.com/getapikey/) 获得一个 API 密钥，每个应用程序、上下文和服务器都需要一个 client id。
+从 [Yubico](https://upgrade.yubico.com/getapikey/) 获得一个 API 密钥，应用程序、上下文和服务器各需要一个 client id。
 
-输入你的邮件地址 ，选择 `Yubikey OTP` 输入方式然后触摸你的 Yubikey，你会获得这样的一组字符串：
+输入你的邮件地址 ，选择 `Yubikey OTP` 输入后触摸 Yubikey，你会获得这样的一组字符串：
 
 ```
 Client ID: <clientId>
@@ -39,9 +39,9 @@ auth    required        pam_yubico.so id=<clientId> key=<secretKey> authfile=/et
 
 ##### 修改 _common-auth_ authentication 模块
 
-在 `/etc/pam.d/common-auth` 中为 `pam_unix.so` 添加 `try_first_pass` 指示。不过不是所有发行版都有 `common-auth` 文件，你可能需要找找看放在哪里会起作用。
+在 `/etc/pam.d/common-auth` 中为 `pam_unix.so` 添加 `try_first_pass` 指示。但不是所有发行版都存在 `common-auth` 文件，你可能需要寻找其他有效文件的路径。
 
-当然别忘了包含比刚刚创建的 Yubikey 验证模块：
+当然别忘了包含刚刚创建的 Yubikey 验证模块：
 
 ```sh
 auth    include                         yubikey-auth
