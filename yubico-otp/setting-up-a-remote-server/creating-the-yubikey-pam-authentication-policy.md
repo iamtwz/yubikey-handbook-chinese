@@ -2,7 +2,7 @@
 
 ##### 获取 YubiKey 的令牌 ID
 
-Yubikey 令牌 ID 用于唯一标识一个 Yubikey。你可以用多种方法获得它。
+Yubikey 令牌 ID 是唯一标识 YubiKey 的公共标识符。您可以通过多种方式获取 Yubikey 令牌ID。
 
 最简单的方法是移除 Yubikey 生成的一次性密码的最后 32 位：
 
@@ -26,7 +26,7 @@ cccccccgklgcvnkcvnnegrnhgrjkhlkfhdkclfncvlgj
 
 ##### 创建系统级别的 Yubikey 用户映射
 
-创建 `/etc/yubikeys` , 它必须包含远程服务器上的 UNIX 用户名和它们的 Yubikey 令牌 ID，如果一个用户有多个 Yubikey 令牌 ID 的话用冒号分割隔开，例如：
+创建 `/etc/yubikeys` , 它必须包含远程服务器上的 UNIX 用户名和它们的 Yubikey 令牌 ID，如果一个用户有多个 Yubikey 令牌 ID 的话可用冒号分割隔开，例如：
 
 ```sh
 <user-1>:<yubikey-id-1>
